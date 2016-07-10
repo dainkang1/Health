@@ -17,7 +17,7 @@
     "url": "https://github.com/dainkang1/Health"
   },
   "homepage": "https://github.com/dainkang1/Health",
-  "devdependencies": {
+  "devDependencies": {
     "semistandard": "^7.0.5"
     },
   "dependencies": {
