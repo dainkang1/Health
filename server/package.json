@@ -1,18 +1,33 @@
 {
-  "name": "server",
+  "name": "health",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "Fitness Application",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server/server.js",
+    "test": "semistandard"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dainkang1/Health"
+  },
+  "author": "Dain",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dainkang1/Health"
+  },
+  "homepage": "https://github.com/dainkang1/Health",
+  "devdependencies": {
+    "semistandard": "^7.0.5"
+    },
   "dependencies": {
+    "angular": "^1.5.5",
+    "angular-ui-router": "^0.2.18",
     "body-parser": "^1.15.0",
     "cors": "^2.7.1",
     "dotenv": "^2.0.0",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "knex": "^0.10.0",
+    "mysql": "^2.10.2"
   }
 }
