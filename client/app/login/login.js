@@ -4,4 +4,7 @@ angular.module('myApp.login', [])
     $scope.alert = function () {
       console.log('logged')
     }
+    $scope.login = function () {
+      console.log('pressed login button')
+    }
   })
