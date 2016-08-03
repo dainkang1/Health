@@ -1,17 +1,27 @@
-angular.module('myApp', ['myApp.login', 'myApp.landing', 'ui.router', 'factories'])
+angular.module('myApp', ['myApp.login', 'myApp.landing', 'myApp.signup', 'myApp.profile', 'ui.router', 'factories'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/')
+  $urlRouterProvider.otherwise('landing')
 
   $stateProvider
-  .state('landing', {
-    url: '/',
-    templateUrl: '/app/landing/landing.html',
-    controller: 'LandingCtrl'
-  })
-  .state('login', {
-    url: '/login',
-    templateUrl: '/app/login/login.html',
-    controller: 'LoginCtrl'
-  })
-})
+     .state('signup', {
+       url: '/',
+       templateUrl: '/app/signup/signup.html',
+       controller: 'SignupCtrl'
+     })
+     .state('signin', {
+       url: '/signin',
+       templateUrl: '/app/signin/signin.html',
+       controller: 'SigninCtrl'
+     })
+     .state('profile', {
+       url: '/profile',
+       templateUrl: '/app/profile/profile.html',
+       controller: 'ProfileCtrl'
+     })
+     .state('landing', {
+       url: '/landing',
+       templateUrl: '/app/landing/landing.html',
+       controller: 'LandingCtrl'
+     })
+ })
