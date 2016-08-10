@@ -21,6 +21,4 @@ describe('Protractor Demo App', function () {
     expect(nameHolder.getText()).toEqual("eric")
 
   })
-
-
 })
